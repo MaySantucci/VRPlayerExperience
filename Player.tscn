@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=2]
+
+[sub_resource type="BoxShape" id=1]
+extents = Vector3( 0.682325, 1, 0.542154 )
+
+[node name="RigidBody" type="RigidBody"]
+
+[node name="ARVROrigin" type="ARVROrigin" parent="."]
+
+[node name="ARVRCamera" type="ARVRCamera" parent="ARVROrigin"]
+transform = Transform( 1, 0, 0, 0, 1.85, 0, 0, 0, 1, 0, 0, 0 )
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+transform = Transform( 1, 0, 0, 0, 1.85, 0, 0, 0, 1, 0, 0, 0 )
+shape = SubResource( 1 )
